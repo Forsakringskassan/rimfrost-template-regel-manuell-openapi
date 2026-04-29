@@ -1,0 +1,83 @@
+openapi: 3.0.3
+info:
+  title: Template manuell regel API
+  version: 1.0.0
+  description: Template för manuell regel OpenAPI.
+
+paths:
+  /regel/template/{handlaggningId}:
+    get:
+      tags: [RegelTemplateController]
+      operationId: getData
+      summary: Hämta information som behövs för uppgiften
+      description: Hämta information som behövs för uppgiften
+      parameters:
+        - name: handlaggningId
+          in: path
+          required: true
+          description: ID för handläggningsärendet
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: Information hämtad OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GetDataResponse"
+        "404":
+          description: Informationen hittades inte
+    patch:
+      tags: [RegelTemplateController]
+      operationId: updateData
+      summary: Uppdatera information
+      description: Uppdatera information
+      parameters:
+        - name: handlaggningId
+          in: path
+          required: true
+          description: ID för handläggningsärendet
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PatchDataRequest"
+      responses:
+        "200":
+          description: Uppdatering genomförd OK
+        "404":
+          description: Informationen hittades inte
+
+components:
+  schemas:
+    GetDataResponse:
+      type: object
+      properties:
+        handlaggning_id:
+          type: string
+          format: uuid
+        template_get_data:
+          $ref: "#/components/schemas/TemplateGetData"
+
+    PatchDataRequest:
+      type: object
+      properties:
+        template_patch_data:
+          $ref: "#/components/schemas/TemplatePatchData"
+
+    TemplateGetData:
+      type: object
+      properties:
+        template_my_get_data_attribute:
+          type: string
+
+    TemplatePatchData:
+      type: object
+      properties:
+        template_my_patch_data_attribute:
+          type: string
