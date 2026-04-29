@@ -1,3 +1,13 @@
+## 1.0.0 (2026-04-29)
+
+### Breaking changes
+
+-  release 1.0 ([2bb18](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/2bb183b05fe49ff) Ulf Slunga)  
+
+### Features
+
+-  release 1.0 ([2bb18](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/2bb183b05fe49ff) Ulf Slunga)  
+
 # rimfrost-template-regel-manuell-openapi changelog
 
 Changelog of rimfrost-template-regel-manuell-openapi.
