@@ -1,24 +1,18 @@
-openapi: 3.0.3
+openapi: 3.1.0
 info:
   title: Template manuell regel API
   version: 1.0.0
   description: Template för manuell regel OpenAPI.
 
 paths:
-  /regel/template/{handlaggningId}:
+  /{handlaggningId}:
     get:
       tags: [RegelTemplateController]
       operationId: getData
       summary: Hämta information som behövs för uppgiften
       description: Hämta information som behövs för uppgiften
       parameters:
-        - name: handlaggningId
-          in: path
-          required: true
-          description: ID för handläggningsärendet
-          schema:
-            type: string
-            format: uuid
+        - $ref: "#/components/parameters/HandlaggningId"
       responses:
         "200":
           description: Information hämtad OK
@@ -26,6 +20,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/GetDataResponse"
+        "400":
+          description: Ogiltig begäran
         "404":
           description: Informationen hittades inte
     patch:
@@ -34,13 +30,7 @@ paths:
       summary: Uppdatera information
       description: Uppdatera information
       parameters:
-        - name: handlaggningId
-          in: path
-          required: true
-          description: ID för handläggningsärendet
-          schema:
-            type: string
-            format: uuid
+        - $ref: "#/components/parameters/HandlaggningId"
       requestBody:
         required: true
         content:
@@ -48,12 +38,24 @@ paths:
             schema:
               $ref: "#/components/schemas/PatchDataRequest"
       responses:
-        "200":
+        "204":
           description: Uppdatering genomförd OK
+        "400":
+          description: Ogiltig begäran
         "404":
           description: Informationen hittades inte
 
 components:
+  parameters:
+    HandlaggningId:
+      name: handlaggningId
+      in: path
+      required: true
+      description: ID för handläggningsärendet
+      schema:
+        type: string
+        format: uuid
+
   schemas:
     GetDataResponse:
       type: object
