@@ -1,3 +1,23 @@
+## 1.1.1 (2026-09-21)
+
+### Bug Fixes
+
+-  align template openapi with rtf-manuell conventions ([8044c](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/8044c1da42d3a39) Ulf Slunga)  
+-  **deps**  update jackson monorepo to v2.22.2 ([c6816](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/c6816d5eb6e70ed) renovate[bot])  
+-  **deps**  update dependency org.openapitools:jackson-databind-nullable to v0.2.11 ([6e6bf](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/6e6bfe4a0b78046) renovate[bot])  
+-  **deps**  update jackson monorepo to v2.22.1 ([2ae76](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/2ae76235c07fd38) renovate[bot])  
+-  Replace npm workflows with gradle workflows ([7d933](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/7d93318ad88575f) Lars Persson)  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.3 ([d02e0](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/d02e0588ca9d13c) renovate[bot])  
+-  **deps**  update jackson monorepo ([9a9eb](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/9a9ebe29e386ed3) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.2 ([fef29](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/fef296fee45576b) renovate[bot])  
+
+### Dependency updates
+
+- pin forsakringskassan/.github action to d1349e6 ([de3b2](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/de3b27ca64eb714) renovate[bot])  
+- update gradle to v9.7.1 ([1e179](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/1e179fe0ec1b98d) renovate[bot])  
+- update gradle to v9.7.0 ([d9529](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/d952906b2378070) renovate[bot])  
+- update gradle to v9.6.1 ([ce301](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/ce3015d92c21d9a) renovate[bot])  
+- update gradle to v9.6.0 ([df038](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/df038a494d96a5b) renovate[bot])  
 ## 1.0.1 (2026-06-03)
 
 ### Bug Fixes
