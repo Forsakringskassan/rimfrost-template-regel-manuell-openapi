@@ -1,3 +1,21 @@
+## 1.1.2 (2026-11-23)
+
+### Bug Fixes
+
+-  Downgradle gradle to 9.7.1 ([fd79c](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/fd79c077286e9bb) Lars Persson)  
+-  **deps**  update jackson monorepo to v2.22.4 ([e777a](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/e777a450bd37f1b) renovate[bot])  
+-  **deps**  update dependency org.openapitools:jackson-databind-nullable to v0.2.13 ([d8eea](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/d8eea8786ef2047) renovate[bot])  
+-  **deps**  update jackson monorepo to v2.22.3 ([569cf](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/569cf6c20c869aa) renovate[bot])  
+-  **deps**  update dependency org.openapitools:jackson-databind-nullable to v0.2.12 ([a2306](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/a230668a3633259) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.9.1 ([01812](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/01812fbdcfbf0e8) renovate[bot])  
+- update forsakringskassan/.github digest to cbc0db8 ([47563](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/475630c29367f8b) renovate[bot])  
+- update gradle to v9.8.2 ([33869](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/33869ca6991aabd) renovate[bot])  
+- update forsakringskassan/.github digest to cbd74f1 ([e7048](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/e70486902c95eba) renovate[bot])  
+- update gradle to v9.8.1 ([0cddf](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/0cddf01a23dad8d) renovate[bot])  
+- update forsakringskassan/.github digest to bfb01f7 ([cc29c](https://github.com/Forsakringskassan/rimfrost-template-regel-manuell-openapi/commit/cc29cc2ce5101cc) renovate[bot])  
 ## 1.1.1 (2026-09-21)
 
 ### Bug Fixes
